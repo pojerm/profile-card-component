@@ -1,0 +1,21 @@
+*,
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-shadow: inherit; /* box-sizing: border-box u body i onda tu inherit bolja praksa */
+}
+html {
+    font-size: 62.5%; /*root is 16px 62.5% je 10px*/
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    // color: $color-grey-dark;
+    /* padding oko cijele stranice da izgleda cool */
+    padding: 3rem;
+
+    box-sizing: border-box;
+}
