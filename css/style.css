@@ -28,34 +28,35 @@ body {
 
 .card {
   text-align: center;
-  background: url(../../images/bg-pattern-card.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2rem;
-  border-radius: 3rem;
-  min-width: 39rem;
-  height: 15rem;
+  background-color: white;
+  border-radius: 2rem;
+}
+.card__bg-pattern {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 .card__img {
   border-radius: 50%;
-  margin-top: 13.7rem;
   border: 0.7rem solid white;
-  margin-top: 9.3rem;
 }
 .card__body {
   font-size: 1.2rem;
-  margin-top: 2.4rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: -6.3rem;
 }
 .card__name {
-  margin-right: 1rem;
   font-size: 2rem;
   flex-grow: 1;
+  margin-top: 1.2rem;
 }
 .card__age {
   font-weight: 400;
@@ -65,9 +66,35 @@ body {
 }
 .card__city {
   display: block;
-  color: #6a6f81;
+  color: #969696;
   flex: 0 0 100%;
   font-size: 1.5rem;
+  margin-bottom: 2.4rem;
+}
+.card__footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border-top: 1px solid #e2e6f7;
+}
+
+.footer__column {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.column__value {
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.column__type {
+  color: #6a6f81;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
