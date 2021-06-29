@@ -1,0 +1,51 @@
+.card {
+    text-align: center;
+    background: url(../../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    border-radius: 3rem;
+    // sirina kartice i visina kartice
+    min-width: 39rem;
+    height: 15rem;
+    // ne znam jel mi opce treba ovaj wrapper
+    &__img {
+        border-radius: 50%;
+        margin-top: 13.7rem;
+        border: .7rem solid white;
+
+        // dodo sam taj margin ne znam jel treba ili ne 
+        margin-top: 9.3rem;
+    }
+    &__body {
+        font-size: 1.2rem;
+        margin-top: 2.4rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__name {
+        // display: inline;
+        margin-right: 1rem;
+        font-size: 2rem;
+        flex-grow: 1;
+    }
+    &__age {
+        // display: inline;
+        font-weight: 400;
+        color: $dark-grayish-blue;
+        font-size: 1.9rem;
+        margin-left: 1rem;
+        
+    }
+    &__city {
+        display: block;
+        color: $dark-grayish-blue;
+        flex: 0 0 100%;
+        font-size: 1.5rem;
+    }
+
+}

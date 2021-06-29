@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap");
 *,
 *::before,
 *::after {
@@ -13,13 +14,60 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Kumbh Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 1.7;
-  /* padding oko cijele stranice da izgleda cool */
-  padding: 3rem;
   box-sizing: border-box;
+  background-color: #19a2ae;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  text-align: center;
+  background: url(../../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  border-radius: 3rem;
+  min-width: 39rem;
+  height: 15rem;
+}
+.card__img {
+  border-radius: 50%;
+  margin-top: 13.7rem;
+  border: 0.7rem solid white;
+  margin-top: 9.3rem;
+}
+.card__body {
+  font-size: 1.2rem;
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card__name {
+  margin-right: 1rem;
+  font-size: 2rem;
+  flex-grow: 1;
+}
+.card__age {
+  font-weight: 400;
+  color: #6a6f81;
+  font-size: 1.9rem;
+  margin-left: 1rem;
+}
+.card__city {
+  display: block;
+  color: #6a6f81;
+  flex: 0 0 100%;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

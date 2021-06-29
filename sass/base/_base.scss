@@ -1,21 +1,29 @@
 *,
-*::before, 
+*::before,
 *::after {
     margin: 0;
     padding: 0;
-    box-shadow: inherit; /* box-sizing: border-box u body i onda tu inherit bolja praksa */
+    box-shadow: inherit;
+    /* box-sizing: border-box u body i onda tu inherit bolja praksa */
 }
+
 html {
-    font-size: 62.5%; /*root is 16px 62.5% je 10px*/
+    font-size: 62.5%;
+    /*root is 16px 62.5% je 10px*/
 }
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-family: 'Kumbh Sans', sans-serif;
     font-size: 1.6rem;
     line-height: 1.7;
-    // color: $color-grey-dark;
-    /* padding oko cijele stranice da izgleda cool */
-    padding: 3rem;
-
     box-sizing: border-box;
+    background-color: $dark-cyan;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
+
+// TEXT
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap');
