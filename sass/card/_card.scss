@@ -6,11 +6,13 @@
     margin: 2rem;
     background-color: white;
     border-radius: 2rem;
+    z-index: 10;
     &__bg-pattern {
         background-repeat: no-repeat;
         background-size: cover;
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
+        width: 33.5rem;
     }
     &__img {
         border-radius: 50%;
@@ -70,6 +72,100 @@
     }
     &__type {
         color: $dark-grayish-blue;
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+// pozadine
+.background {
+    &__top {
+        width: 100vh;
+        height: auto;
+        position: absolute;
+        top: -32%;
+        left: -15%;
+    }
+    &__bottom {
+        width: 100vh;
+        height: auto;
+        position: absolute;
+        bottom: -26%;
+        right: -16%;
+    }
+}
+
+// ************************************ MEDIA QUERIES
+// 1320px
+@media (max-width: 1320px) {
+    .background {
+        &__size {
+            width: 90vh;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .background {
+        &__size {
+            width: 85vh;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .background {
+        &__size {
+            width: 85vh;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .background {
+        &__size {
+            width: 75vh;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .background {
+        &__size {
+            width: 70vh;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .background {
+        &__top {
+            top: -25%;
+            left: -80%;
+        }
+        &__bottom {
+            bottom: -20%;
+            right: -72%;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .background {
+        &__size {
+            width: 65rem;
+        }
+    }
+    .card {
+        &__bg-pattern {
+            width: 30rem;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .background {
+        &__size {
+            width: 75vh;
+        }
     }
 }

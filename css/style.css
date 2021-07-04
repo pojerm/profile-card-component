@@ -21,9 +21,10 @@ body {
   background-color: #19a2ae;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .card {
@@ -34,12 +35,14 @@ body {
   margin: 2rem;
   background-color: white;
   border-radius: 2rem;
+  z-index: 10;
 }
 .card__bg-pattern {
   background-repeat: no-repeat;
   background-size: cover;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
+  width: 33.5rem;
 }
 .card__img {
   border-radius: 50%;
@@ -94,7 +97,72 @@ body {
 }
 .column__type {
   color: #6a6f81;
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+.background__top {
+  width: 100vh;
+  height: auto;
+  position: absolute;
+  top: -32%;
+  left: -15%;
+}
+.background__bottom {
+  width: 100vh;
+  height: auto;
+  position: absolute;
+  bottom: -26%;
+  right: -16%;
+}
+
+@media (max-width: 1320px) {
+  .background__size {
+    width: 90vh;
+  }
+}
+@media (max-width: 1200px) {
+  .background__size {
+    width: 85vh;
+  }
+}
+@media (max-width: 1100px) {
+  .background__size {
+    width: 85vh;
+  }
+}
+@media (max-width: 950px) {
+  .background__size {
+    width: 75vh;
+  }
+}
+@media (max-width: 700px) {
+  .background__size {
+    width: 70vh;
+  }
+}
+@media (max-width: 600px) {
+  .background__top {
+    top: -25%;
+    left: -80%;
+  }
+  .background__bottom {
+    bottom: -20%;
+    right: -72%;
+  }
+}
+@media (max-width: 400px) {
+  .background__size {
+    width: 65rem;
+  }
+
+  .card__bg-pattern {
+    width: 30rem;
+  }
+}
+@media (max-width: 375px) {
+  .background__size {
+    width: 75vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
